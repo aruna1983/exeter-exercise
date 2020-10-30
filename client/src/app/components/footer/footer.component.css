@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background: lightgray;
+    padding: 30px 20px;
+    border-radius: 10px 10px 0 0;
+ }
+
+ .vertical-spacer {
+    margin: 0px 12px 0px;
+    border-right: solid 5px black;
+}
+

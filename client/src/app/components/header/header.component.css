@@ -1,0 +1,23 @@
+.container {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.header {
+    background: orangered;
+    padding: 30px 20px;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+ }
+
+ .navigations {
+    display:flex; 
+    justify-content: flex-start;
+}
+
+ .vertical-spacer {
+     margin: 0px 12px 0px;
+     border-right: solid 5px white;
+ }

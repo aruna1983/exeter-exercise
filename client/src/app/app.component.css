@@ -1,0 +1,20 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    height: 98vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 30px;
+}
+
+main {
+    flex: 1;
+}
