@@ -18,7 +18,12 @@
     cursor: pointer;
 }
 
- .vertical-spacer {
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.vertical-spacer {
      margin: 0px 12px 0px;
      border-right: solid 5px white;
  }

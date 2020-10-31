@@ -1,0 +1,9 @@
+
+<div class="container" *ngIf="users.length > 0">
+    <div class="card items"  *ngFor="let user of users">
+        <img  [src]= "user.avatar_url" alt="Avatar" style="width:100%">
+        <div class="content">
+            <h4><b>{{ user.login }} </b></h4>
+        </div>
+    </div>
+</div>

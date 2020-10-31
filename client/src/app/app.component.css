@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    height: 98vh;
+    height: 97.5vh;
     display: flex;
 
     /* Direction of the items, can be row or column */
@@ -16,5 +16,6 @@ footer {
 }
 
 main {
+    padding: 5px;
     flex: 1;
 }
