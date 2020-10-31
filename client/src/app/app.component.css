@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    height: 97.5vh;
+    height: 98vh;
     display: flex;
 
     /* Direction of the items, can be row or column */
@@ -12,10 +12,11 @@ body {
 
 header,
 footer {
-    height: 30px;
+    height: 15px;
 }
 
 main {
     padding: 5px;
     flex: 1;
+    overflow: auto;
 }

@@ -1,0 +1,33 @@
+
+<div class="card" *ngIf="user">
+    <div class="item">
+        <img  [src]= "user.avatar_url" alt="Avatar" style="width:500px;height: 500px;">
+    </div>
+    <div class="item"> 
+        <ul>
+            <li>
+                Name : {{user.name}}
+            </li>
+            <li *ngIf="user.location">
+                Locaion : {{user.location}}
+            </li>
+            <li>
+                Total Public Repos : {{user.public_repos}}
+            </li>
+            <li>
+                Total Followers : {{user.followers}}
+            </li>
+            <li>
+                User Since : {{user.created_at | date:'shortDate' }}
+            </li>
+            <li>
+                <a [href]="user.html_url" target="_blank" >Github Link</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        
+        
+
+    
+

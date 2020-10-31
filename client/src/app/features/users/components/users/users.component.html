@@ -1,9 +1,9 @@
 
 <div class="container" *ngIf="users.length > 0">
     <div class="card items"  *ngFor="let user of users">
-        <img  [src]= "user.avatar_url" alt="Avatar" style="width:100%">
+        <img  [src]= "user.avatar_url" alt="Avatar" style="width:100%;height: 350px;">
         <div class="content">
-            <h4><b>{{ user.login }} </b></h4>
+            <button routerLink="/users/{{ user.login }}">VIEW DETAILS</button>
         </div>
     </div>
 </div>
