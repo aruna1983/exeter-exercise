@@ -22,4 +22,9 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have main content', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.content').textContent).toContain('Welcome to the application!!');
+  });
 });
