@@ -3,7 +3,7 @@
     <div class="card items"  *ngFor="let user of users">
         <img  [src]= "user.avatar_url" alt="Avatar" style="width:100%;height: 350px;">
         <div class="content">
-            <button routerLink="/users/{{ user.login }}">VIEW DETAILS</button>
+            <a routerLink="/users/{{ user.login }}">VIEW DETAILS</a>
         </div>
     </div>
 </div>
