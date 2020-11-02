@@ -1,5 +1,5 @@
 
-<div class="card" *ngIf="user">
+<div class="card" *ngIf="user$ | async as user">
     <div class="item">
         <img  [src]= "user.avatar_url" alt="Avatar">
     </div>

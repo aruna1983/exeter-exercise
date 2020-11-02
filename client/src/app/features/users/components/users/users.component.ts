@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
 import { UserService } from '../../services/user.service';
 
 @Component({
@@ -8,19 +9,12 @@ import { UserService } from '../../services/user.service';
 })
 export class UsersComponent implements OnInit {
 
-  users: any[] = []
+  usersSubscrition: Subscription;
+  users$: Observable<any[]>;
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-
-    this.userService.getUsers().subscribe((response: any[]) => {
-      this.users = response;
-    }, 
-    (error) => {
-
-    }
-  )
-
+    this.users$ = this.userService.getUsers();
   }
 
 }

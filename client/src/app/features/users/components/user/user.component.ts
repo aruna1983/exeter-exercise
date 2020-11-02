@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 
 import { UserService } from '../../services/user.service';
 
@@ -9,16 +10,14 @@ import { UserService } from '../../services/user.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  user: any;
+  user$: Observable<any>;
+
   constructor(private route: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       const username = params['username'];
-      this.userService
-          .getUser(username)
-          .subscribe(user => this.user = user);
+      this.user$ = this.userService.getUser(username)
     });
   }
-  
 }
