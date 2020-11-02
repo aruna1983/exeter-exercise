@@ -20,3 +20,43 @@
   li {
       font-size: 3rem;
   }
+
+  @media screen and (max-width:900px) {
+    ul {
+        background-color: green;
+    }
+    img {
+        height: 200px;
+        width: 200px
+    }
+    li {
+        font-size: 1rem;
+    }
+  }
+  @media screen and (min-width:900px) and (max-width:1200px) {
+    ul {
+        background-color: yellow;
+    }
+    img {
+        height: 350px;
+        width: 350px
+    }
+    li {
+        font-size: 2rem;
+    }
+
+  }
+  @media screen and (min-width:1200px) {
+    ul {
+        background-color: orangered;
+    }
+    img {
+        height: 550px;
+        width: 550px
+    }
+
+    li {
+        font-size: 3rem;
+    }
+
+  }
